@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="computer architecture بنية الكمبيوتر " />
+
+<title>computer architecture</title>
+</head>
+<body>
+<p><h3>
+nama:mariam antonious morkos loka <p>الاسم /مريم نطونيوس مرقص لوقا 
+<p>section:40
+group:7
+<center><h1>"computer architecture"</h1></center>
+<p>computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems.
+<img src="https://en.m.wikipedia.org/wiki/Computer_architecture#/media/File%3AABasicComputer.gif"alt="https://en.m.wikipedia.org/wiki/Computer_architecture#/media/File%3AABasicComputer.gif">
+
+<h3>(History)</h3>
+The first documented <mark>computer architecture</mark> was in the correspondence between Charles Babbage and Ada Lovelace, describing the analytical engine. When building the computer Z1 in 1936, Konrad Zuse described in two patent applications for his future projects that machine instructions could be stored in the same storage used for data, i.e., the stored-program concept.[3][4] Two other early and important examples are:
+
+John von Neumann's 1945 paper, First Draft of a Report on the EDVAC, which described an organization of logical elements;[5] and
+Alan Turing's more detailed Proposed Electronic Calculator for the Automatic Computing Engine, also 1945 and which cited John von Neumann's paper.[6]
+The term “architecture” in computer literature can be traced to the work of Lyle R. Johnson and Frederick P. Brooks, Jr., members of the Machine Organization department in IBM's main research center in 1959. Johnson had the opportunity to write a proprietary research communication about the Stretch, an IBM-developed supercomputer for Los Alamos National Laboratory (at the time known as Los Alamos Scientific Laboratory). To describe the level of detail for discussing the luxuriously embellished computer, he noted that his description of formats, instruction types, hardware parameters, and speed enhancements were at the level of “system architecture”, a term that seemed more useful than “machine organization”.[7]
+
+Subsequently, Brooks, a Stretch designer, opened Chapter 2 of a book called Planning a Computer System: Project Stretch by stating, “Computer architecture, like other architecture, is the art of determining the needs of the user of a structure and then designing to meet those needs as effectively as possible within economic and technological constraints.”[8]
+
+Brooks went on to help develop the IBM System/360 (now called the IBM zSeries) line of computers, in which “architecture” became a noun defining “what the user needs to know”.[9] Later, computer users came to use the term in many less explicit ways.[10]
+
+The earliest computer architectures were designed on paper and then directly built into the final hardware form.[11] Later, computer architecture prototypes were physically built in the form of a transistor–transistor logic (TTL) computer—such as the prototypes of the 6800 and the PA-RISC—tested, and tweaked, before committing to the final hardware form. As of the 1990s, new computer architectures are typically "built", tested, and tweaked—inside some other computer architecture in a computer architecture simulator; or inside a FPGA as a soft microprocessor; or both—before committing to the final hardware form.[12]
+<p>
+<h3>(Subcategories)</h3>>
+The discipline of <mark>computer architecture</mark> has three main subcategories:[13]
+
+Instruction set architecture (ISA): defines the machine code that a processor reads and acts upon as well as the word size, memory address modes, processor registers, and data type.
+Microarchitecture: also known as "computer organization", this describes how a particular processor will implement the ISA.[14] The size of a computer's CPU cache for instance, is an issue that generally has nothing to do with the ISA.
+Systems design: includes all of the other hardware components within a computing system, such as data processing other than the CPU (e.g., direct memory access), virtualization, and multiprocessing
+There are other technologies in computer architecture. The following technologies are used in bigger companies like Intel, and were estimated in 2002[13] to count for 1% of all of computer architecture:
+
+Macroarchitecture: architectural layers more abstract than microarchitecture
+Assembly instruction set architecture: A smart assembler may convert an abstract assembly language common to a group of machines into slightly different machine language for different implementations.
+Programmer-visible macroarchitecture: higher-level language tools such as compilers may define a consistent interface or contract to programmers using them, abstracting differences between underlying ISA, UISA, and microarchitectures. For example, the C, C++, or Java standards define different programmer-visible macroarchitectures.
+Microcode: microcode is software that translates instructions to run on a chip. It acts like a wrapper around the hardware, presenting a preferred version of the hardware's instruction set interface. This instruction translation facility gives chip designers flexible options: E.g. 1. A new improved version of the chip can use microcode to present the exact same instruction set as the old chip version, so all software targeting that instruction set will run on the new chip without needing changes. E.g. 2. Microcode can present a variety of instruction sets for the same underlying chip, allowing it to run a wider variety of software.
+UISA: User Instruction Set Architecture, refers to one of three subsets of the RISC CPU instructions provided by PowerPC RISC Processors. The UISA subset, are those RISC instructions of interest to application developers. The other two subsets are VEA (Virtual Environment Architecture) instructions used by virtualisation system developers, and OEA (Operating Environment Architecture) used by Operation System developers.[15]
+Pin architecture: The hardware functions that a microprocessor should provide to a hardware platform, e.g., the x86 pins A20M, FERR/IGNNE or FLUSH. Also, messages that the processor should emit so that external caches can be invalidated (emptied). Pin architecture functions are more flexible than ISA functions because external hardware can adapt to new encodings, or change from a pin to a message. The term "architecture" fits, because the functions must be provided for compatible systems, even if the detailed method changes
+<h3>(Roles)</h3>
+<p><b>Definition</b>	Edit
+Computer architecture is concerned with balancing the performance, efficiency, cost, and reliability of a computer system. The case of instruction set architecture can be used to illustrate the balance of these competing factors. More complex instruction sets enable programmers to write more space efficient programs, since a single instruction can encode some higher-level abstraction (such as the x86 Loop instruction).[16] However, longer and more complex instructions take longer for the processor to decode and can be more costly to implement effectively. The increased complexity from a large instruction set also creates more room for unreliability when instructions interact in unexpected ways.
+
+The implementation involves integrated circuit design, packaging, power, and cooling. Optimization of the design requires familiarity with compilers, operating systems to logic design, and packaging.</p>
+<b>Instruction set architecture</b>
+An instruction set architecture (ISA) is the interface between the computer's software and hardware and also can be viewed as the programmer's view of the machine. Computers do not understand high-level programming languages such as Java, C++, or most programming languages used. A processor only understands instructions encoded in some numerical fashion, usually as binary numbers. Software tools, such as compilers, translate those high level languages into instructions that the processor can understand.
+
+Besides instructions, the ISA defines items in the computer that are available to a program—e.g., data types, registers, addressing modes, and memory. Instructions locate these available items with register indexes (or names) and memory addressing modes.
+
+The ISA of a computer is usually described in a small instruction manual, which describes how the instructions are encoded. Also, it may define short (vaguely) mnemonic names for the instructions. The names can be recognized by a software development tool called an assembler. An assembler is a computer program that translates a human-readable form of the ISA into a computer-readable form. Disassemblers are also widely available, usually in debuggers and software programs to isolate and correct malfunctions in binary computer programs.
+
+ISAs vary in quality and completeness. A good ISA compromises between programmer convenience (how easy the code is to understand), size of the code (how much code is required to do a specific action), cost of the computer to interpret the instructions (more complexity means more hardware needed to decode and execute the instructions), and speed of the computer (with more complex decoding hardware comes longer decode time). Memory organization defines how instructions interact with the memory, and how memory interacts with itself.
+
+During design emulation, emulators can run programs written in a proposed instruction set. Modern emulators can measure size, cost, and speed to determine whether a particular ISA is meeting its goals.
+<p<b>Computer organization</b>Computer organization helps optimize performance-based products. For example, software engineers need to know the processing power of processors. They may need to optimize software in order to gain the most performance for the lowest price. This can require quite a detailed analysis of the computer's organization. For example, in an SD card, the designers might need to arrange the card so that the most data can be processed in the fastest possible way.
+
+Computer organization also helps plan the selection of a processor for a particular project. Multimedia projects may need very rapid data access, while virtual machines may need fast interrupts. Sometimes certain tasks need additional components as well. For example, a computer capable of running a virtual machine needs virtual memory hardware so that the memory of different virtual computers can be kept separated. Computer organization and features also affect power consumption and processor cost.</p>
+<p><b>Implementation</b>Once an instruction set and micro-architecture have been designed, a practical machine must be developed. This design process is called the implementation. Implementation is usually not considered architectural design, but rather hardware design engineering. Implementation can be further broken down into several steps:
+
+Logic implementation designs the circuits required at a logic-gate level.
+Circuit implementation does transistor-level designs of basic elements (e.g., gates, multiplexers, latches) as well as of some larger blocks (ALUs, caches etc.) that may be implemented at the logic-gate level, or even at the physical level if the design calls for it.
+Physical implementation draws physical circuits. The different circuit components are placed in a chip floorplan or on a board and the wires connecting them are created.
+Design validation tests the computer as a whole to see if it works in all situations and all timings. Once the design validation process starts, the design at the logic level are tested using logic emulators. However, this is usually too slow to run a realistic test. So, after making corrections based on the first test, prototypes are constructed using Field-Programmable Gate-Arrays (FPGAs). Most hobby projects stop at this stage. The final step is to test prototype integrated circuits, which may require several redesigns.
+For CPUs, the entire implementation process is organized differently and is often referred to as CPU design.</p>
+<p><b>Abstract</b>
+Computer architecture is the organization of the components making up a computer system and the semantics or meaning of the operations that guide its function. As such, the computer architecture governs the design of a family of computers and defines the logical interface that is targeted by programming languages and their compilers. The organization determines the mix of functional units of which the system is composed and the structure of their interconnectivity. The architecture semantics is the meaning of what the systems do under user direction and how their functional units are controlled to work together. An important embodiment of semantics is the instruction set architecture (ISA) of the system. The ISA is a logical (usually binary) representative encoding of the basic set of distinct operations that a computer architecture may perform, and by which application programs specify the useful work to be done. At the machine level the hardware (sometimes controlled by firmware) system directly interprets and executes a sequence or partially ordered set of these basic operations. This is true for all computer cores, from those few in the smallest mobile phones to potentially millions making up the world's largest supercomputers. High performance computer architecture extends structure to a hierarchy of functional elements, whether small and limited in capability or possibly entire processor cores themselves. In this chapter many different classes of structure are presented, each exploiting concurrency in its own particular way. But in all cases this more broad definition of general architecture for high performance computing emphasizes aspects of the system that contribute to achieving performance. A high performance computer is designed to go fast, and its organization and semantics are specially devised to deliver computational speed. This chapter introduces the basic foundations of computer architecture in general and for high performance computer systems in particular. It is here, at the structural and logical levels, that parallelism of operation in its many forms and size is first presented. This chapter provides a first examination of the principal forms of supercomputer architecture and the underlying concepts that govern their performance.
+<p>The previous chapters introduced digital design principles and building blocks. In this chapter, we jump up a few levels of abstraction to define the architecture of a computer. The architecture is the programmer’s view of a computer. It is defined by the instruction set (language) and operand locations (registers and memory). Many different architectures exist, such as ARM, x86, MIPS, SPARC, and PowerPC.
+
+The first step in understanding any computer architecture is to learn its language. The words in a computer’s language are called instructions.
+
+
+
+The computer’s vocabulary is called the instruction set. All programs running on a computer use the same instruction set. Even complex software applications, such as word processing and spreadsheet applications, are eventually compiled into a series of simple instructions such as add, subtract, and branch. Computer instructions indicate both the operation to perform and the operands to use. The operands may come from memory, from registers, or from the instruction itself.
+
+Computer hardware understands only 1’s and 0’s, so instructions are encoded as binary numbers in a format called machine language. Just as we use letters to encode human language, computers use binary numbers to encode machine language. The ARM architecture represents each instruction as a 32-bit word. Microprocessors are digital systems that read and execute machine language instructions. However, humans consider reading machine language to be tedious, so we prefer to represent the instructions in a symbolic format called assembly language.
+
+The instruction sets of different architectures are more like different dialects than different languages. Almost all architectures define basic instructions, such as add, subtract, and branch, that operate on memory or registers. Once you have learned one instruction set, understanding others is fairly straightforward.
+
+A computer architecture does not define the underlying hardware implementation. Often, many different hardware implementations of a single architecture exist. For example, Intel and Advanced Micro Devices (AMD) both sell various microprocessors belonging to the same x86 architecture. They all can run the same programs, but they use different underlying hardware and therefore offer trade-offs in performance, price, and power. Some microprocessors are optimized for high-performance servers, whereas others are optimized for long battery life in laptop computers. The specific arrangement of registers, memories, ALUs, and other building blocks to form a microprocessor is called the microarchitecture and will be the subject of Chapter 7. Often, many different microarchitectures exist for a single architecture.
+
+The “ARM architecture” we describe is ARM version 4 (ARMv4), which forms the core of the instruction set. Section 6.7 summarizes new features in versions 5–8 of the architecture. The ARM Architecture Reference Manual (ARM), available online, is the authoritative definition of the architecture.
+
+In this text, we introduce the ARM architecture. This architecture was first developed in the 1980s by Acorn Computer Group, which spun off Advanced RISC Machines Ltd., now known as ARM. Over 10 billion ARM processors are sold every year. Almost all cell phones and tablets contain multiple ARM processors. The architecture is used in everything from pinball machines to cameras to robots to cars to rack-mounted servers. ARM is unusual in that it does not sell processors directly, but rather licenses other companies to build its processors, often as part of a larger system-on-chip. For example, Samsung, Altera, Apple, and Qualcomm all build ARM processors, either using microarchitectures purchased from ARM or microarchitectures developed internally under license from ARM. We choose to focus on ARM because it is a commercial leader and because the architecture is clean, with few idiosyncrasies. We start by introducing assembly language instructions, operand locations, and common programming constructs, such as branches, loops, array manipulations, and function calls. We then describe how the assembly language translates into machine language and show how a program is loaded into memory and executed.
+
+Throughout the chapter, we motivate the design of the ARM architecture using four principles articulated by David Patterson and John Hennessy in their text Computer Organization and Design: (1) regularity supports simplicity; (2) make the common case fast; (3) smaller is faster; and (4) good design demands good compromises</p>
+<p><b>Database Systems Performance Analysis</b>Paul J. Fortier, Howard E. Michel, in Computer Systems Performance Evaluation and Prediction, 2003
+
+14.2.1 PC performance assessment benchmark
+The PC computer architecture performance test utilized is comprised of 22 individual benchmark tests that are available in six test suites. The six different test suites test for the following:
+
+▪
+Integer and floating-point mathematical operations
+
+▪
+Tests of standard two-dimensional graphical functions
+
+▪
+Reading, writing, and seeking within disk files
+
+▪
+Memory allocation and access
+
+▪
+Tests of the MMX (multimedia extensions) in newer CPUs
+
+▪
+A test of the DirectX 3D graphics system
+
+The test results reported are shown as relative values. The larger the number the faster the computer. For example, a computer with a result of 40 can process roughly twice as much data as a computer with a result of 20. The Passmark rating is a weighted average of all the other test results and gives a single overall indication of the computer's performance. The bigger the number the faster the computer. The results we observed are shown in Table
+<table border="1">
+<tr><td>Parameter Tested<td>Oracle System<td>Informix System<td>SQL System<td>DB2 System
+<tr><td>Math—Addition<td>96.6<td>96.2<td>96.6<td>97.0
+<tr><td>Math—Subtraction<td>96.4<td>97.1<td>96.2<td>97.6
+<tr><td>Math—Multiplication<td>101.1<td>101.4<td>101.4<td>103.1
+<tr><td>Math—Division<td>12.9<td>12.8<td>12.9<td>13.0
+<tr><td>Math—Floating-Point Addition<td>87.7<td>87.8<td>87.6<td>88.7
+<tr><td>Math—Floating-Point Subtraction<td>91.7<td>91.7<td>90.9<td>92.3
+<tr><td>Math—Floating-Point Multiplication<td>14.8<td>14.8<td>14.8<td>14.9
+<tr><td>Math—Floating-Point Division<td>171.2<td>172.2<td>170.7<td>177.6
+<tr><td>Math—Maximum Mega FLOPS<td>17.5<td>17.6<td>17.5<td>17.8
+<tr><td>Graphics 2D—Lines<td>12.9<td>12.9<td>12.8<td>12.9
+<tr><td>Graphics 2D—Bitmaps<td>4.7<td>4.7<td>4.7<td>4.7
+<tr><td>Graphics 2D—Shapes<td>22.9<td>23.0<td>22.9<td>22.9
+<tr><td>Memory—Allocated Small Blocks<td>86.6<td>87.6<td>87.0<td>87.6
+<tr><td>Memory—Read Cached<td>67.9<td>68.4<td>68.0<td>68.5</td>
+<p><b>links</b>http://portal.acm.org/toc.cfm?id=SERIES416&type=series&coll=GUIDE&dl=GUIDE&CFID=41492512&CFTOKEN=82922478</p>
+<p>http://www.microarch.org/</p>
+<p>https://web.archive.org/web/20050528085407/http://www.hpcaconf.org/</p>
+</body>
+</html>
